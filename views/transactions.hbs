@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
+
+    <title>Transactions</title>
+</head>
+<body>
+    <h1>Transactions</h1>
+    <form action="/auth/transactions" method="POST" onsubmit="return validateForm()">
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <br>
+        <input type="radio" id="withdraw" name="transactionType" value="withdraw" required>
+        <label for="withdraw">Withdraw</label>
+        <input type="radio" id="deposit" name="transactionType" value="deposit" required>
+        <label for="deposit">Deposit</label>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
