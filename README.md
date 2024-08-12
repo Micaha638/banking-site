@@ -1,4 +1,4 @@
-# bankingsite
+# banking site
 Banking Application
 
 This is a simple banking application that allows users to register, login, and perform transactions. It is built using Node.js, Express, and MySQL.
